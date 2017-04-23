@@ -76,4 +76,11 @@ moyenne <- mean(jeu)
 
 
 # graphiques
-curve(exp(-x*x/2)/sqrt(2*pi), from=0, to=100)
+# curve(exp(-x*x/2)/sqrt(2*pi), from=0, to=100)
+
+test5 <- function(x, miu, sigma){
+	return (exp(-(x-miu)**2/(2*sigma**2))/(sigma*sqrt(2*pi)))
+}
+
+#curve(test5(x, miu=10,sigma=0.5), from=0, to=100)
+# le sommet de la courbe est la coordonée (miu, sigma) !
